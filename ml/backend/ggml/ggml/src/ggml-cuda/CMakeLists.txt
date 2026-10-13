@@ -30,7 +30,7 @@ if (CUDAToolkit_FOUND)
             if (CUDAToolkit_VERSION VERSION_LESS "13")
                 # Add compute capability 3.7 for Tesla K80 support (Kepler architecture)
                 # Note: CUDA 11.x still supports Kepler, but CUDA 12+ drops it
-                list(APPEND CMAKE_CUDA_ARCHITECTURES 37-virtual 50-virtual 61-virtual 70-virtual)
+                list(APPEND CMAKE_CUDA_ARCHITECTURES 35-virtual 37-virtual 50-virtual 61-virtual 70-virtual)
             endif ()
 
             # Modern architectures supported by all recent CUDA versions

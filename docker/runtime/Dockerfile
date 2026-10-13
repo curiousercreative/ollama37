@@ -14,7 +14,7 @@ FROM ollama37-builder AS builder
 ARG GIT_COMMIT=HEAD
 # Clone ollama37 source code from GitHub
 RUN cd /usr/local/src \
-    && git clone https://github.com/dogkeeper886/ollama37.git \
+    && git clone https://github.com/curiousercreative/ollama37.git \
     && cd ollama37 \
     && git checkout ${GIT_COMMIT}
 
